@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+            body{
+                background: url("./images/Shiny\ Overlay\ \(2\).svg");
+                background-position: absolute;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .logo{
+                position: absolute;
+                top: 0;
+                left: 0;
+                transform: translate(100%, -3%);
+                height: fit-content;
+                width: fit-content;
+            }
+            .launchBtn {
+                position: relative;
+                width: 20vw;
+                display: inline-block;
+                cursor: pointer;
+                margin: 21% 40%;
+                padding: 12px 24px;
+                border: 1px solid #aa00ff59;
+                background-color: #aa00ff59;
+                border-radius: 20px;
+                transition: all 0.2s ease-in;
+                overflow: hidden;
+                font-size: 19px;
+                font-family: 'Fira Sans', sans-serif;
+                color: #ffffff;
+                z-index: 1;
+               }
+               
+               .launchBtn:before {
+                content: "";
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%) scaleY(1) scaleX(1.25);
+                top: 100%;
+                width: 140%;
+                height: 180%;
+                background-color: #ffffff;
+                border-radius: 50%;
+                display: block;
+                transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+                z-index: -1;
+               }
+               
+               .launchBtn:after {
+                content: "";
+                position: absolute;
+                left: 55%;
+                transform: translateX(-50%) scaleY(1) scaleX(1.45);
+                top: 180%;
+                width: 160%;
+                height: 190%;
+                background-color: #aa00ff;
+                border-radius: 50%;
+                display: block;
+                transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+                z-index: -1;
+               }
+               
+               .launchBtn:hover {
+                color: #ffffff;
+                border: 1px solid #aa00ff6a;
+               }
+               
+               .launchBtn:hover:before {
+                top: -35%;
+                background-color: #aa00ff;
+                transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+               }
+               
+               .launchBtn:hover:after {
+                top: -45%;
+                background-color: #aa00ff;
+                transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+               }
+            .launchBtn:hover{
+                background: #aa00ff;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="logo">
+            <img src="./images/WhatsApp Image 2023-02-04 at 19.59.46.png" alt="">
+        </div>
+        <div class="starter">
+            <a href="./index.html"> <button id="launchBtn" class="launchBtn">Get Started </button></a>
+        </div>
+    </body>
+</html>

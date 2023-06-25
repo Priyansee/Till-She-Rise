@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sign In</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- <link rel="stylesheet" href="verify.css"> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js" integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <div class="box">
+        <div class="form-box">
+            <div class="button-box">
+
+                <div id="btn"></div>
+
+                <button type="button" class="toggle-btn" onclick="login()">Sign In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Sign Up</button>
+            </div>
+
+            <!-- sign in form -->
+            <form action="login.php" method="post" class="login-form" id="login">
+                
+                <div class="inputBox">
+                    <input type="email" id="signInEmail" name="email" class="form-field" required>
+                    <span>E-mail</span>
+                </div>
+                
+                <div class="inputBox">
+                    <input type="password" id="signInPassword" name="password" class="form-field" required>
+                    <span>Password</span>
+                </div>
+
+                <input type="checkbox" class="checkbox"><span>Remember me</span>
+
+                <span class="fop"><a href="#">Forgot Password?</a></span>
+                <button type="submit" id="signInBtn" name="submit" class="submit">sign in</button>
+            </form>
+
+            <!-- sign up form -->
+            <form action="" method="post" class="login-form" id="register">
+                <div class="inputBox">
+                    <input type="text" id="signUpUser" name="User" class="form-field" required>
+                    <span>Username</span>
+                </div>
+                <div class="inputBox">
+                    <input type="email" id="signUpEmail" name="email" class="form-field" placeholder=" " required>
+                    <span>E-mail</span>
+                </div>
+                <div class="inputBox">
+                    <input type="password" id="signUpPassword" name="password" class="form-field" placeholder=" " required>
+                    <span>Password</span>
+                </div>
+                <div class="inputBox">
+                    <input type="password" name="confirm-psw" class="form-field" placeholder=" " required>
+                    <span>Confirm Password</span>
+                </div>
+
+                <button type="submit" name="submit" id="signUpBtn" class="submit">Sign Up</button>
+            </form>
+        </div>
+        <div class="right-container">
+            <h1>" Sign Up to become Our Family Member "</h1>
+            <div class="container">
+                <div class="pic1"><a href="#"><img src="./images/google.png" /></a></div>
+                <div class="pic2"><a href="#"><img src="./images/facebook.png" /></a></div>
+                <div class="pic3"><a href="#">
+                    <img src="./images/twitter.png" /></a>
+                </div>
+                <div class="pic4"><a href="#">
+                    <img src="./images/instagram.png" /></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="./script.js"></script>
+    <script type="module" src="./main.js"></script>
+
+</body>
+
+</html>

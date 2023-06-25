@@ -1,2 +1,2 @@
-# Till-She-Rise
-A  project made to help women in freelanciing
+# Till_She_Rise
+A website for encouraging women to work and to help her to become financially independent....
